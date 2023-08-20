@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navbar */
+.container-fluid {
+    padding: 0 20px;
+}
+
+.signup {
+    width: 100px;
+    padding: 15px 10px;
+    color: #fff;
+    border-color: #0275d8;
+    transition: 0.5s;
+}
+
+.signup:hover {
+    background-color: #0587eb;
+}
+
+/* Landing page/hero */
+
+.landing {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: url('https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.landing h1 {
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 50px !important;
+}
+
+.email{
+    width: 27em;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px !important;
+}
+
+.email input {
+    height: 55px;
+}
+
+.email-btn {
+    padding: 16px 30px;
+}
+
+/* About */
+
+.about {
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,25em);
+}
+
+
+.about img {
+    width: 70px;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,25em);
+    padding-left: 90px;
+}
+
+.card {
+    margin: 20px auto;
+}
+
+.card img {
+    width: 287px;
+    height: 200px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 100px 0 50px 0;
+}
+
+
+/* Media Query */
+@media(max-width:1024px) {
+    .about {
+        grid-template-columns: repeat(2,20em);
+    }
+    .cards {
+        grid-template-columns: repeat(2,20em);
+    }
+}
+
+@media(max-width:580px) {
+    .landing{
+        width: 500px;
+    }
+    .about {
+        grid-template-columns: 25em;
+        padding-left: 50px;
+    }
+    .cards {
+        grid-template-columns: 25em;
+        padding-left: 50px;
+    }
+}
